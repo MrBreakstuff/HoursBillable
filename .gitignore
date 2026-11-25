@@ -1,0 +1,52 @@
+# Build output directory
+build/
+
+# Compiled binaries & debug symbols (Windows, Linux, macOS)
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.bin
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.o
+*.a
+*.wasm
+*.dSYM/
+
+# Default extensionless binaries if `odin build` is run in root without `-out:`
+/src
+/main
+
+# LLVM & Odin intermediate files
+*.ll
+*.bc
+
+# Profilers & debuggers (RAD Debugger, Spall, etc.)
+*.raddbg
+*.rdi
+*.spall
+
+# Odin Language Server (OLS)
+ols.json
+.ols/
+
+# Editors & OS (Windows, macOS, Linux)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Desktop.ini
+
