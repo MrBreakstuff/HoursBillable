@@ -57,7 +57,8 @@ odin build "$SRC_DIR" \
     "$OPTIMIZATION" \
     "${SYMBOLS[@]}" \
     -vet \
-    -strict-style || exit $?
+    -strict-style \
+    -collection:libs=libs || exit $?
 
 # Post-build action
 case "$ACTION" in

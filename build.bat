@@ -44,7 +44,7 @@ if "%ACTION%"=="debug" set "SYMBOLS=-debug"
 if not exist "%OUT_DIR%" mkdir "%OUT_DIR%"
 if errorlevel 1 exit /b %errorlevel%
 
-odin build "%SRC_DIR%" -out:"%OUT_DIR%\%EXE_NAME%" %OPTIMIZATION% %SYMBOLS% -vet -strict-style
+odin build "%SRC_DIR%" -out:"%OUT_DIR%\%EXE_NAME%" %OPTIMIZATION% %SYMBOLS% -vet -strict-style -collection:libs=libs
 
 if errorlevel 1 exit /b %errorlevel%
 
