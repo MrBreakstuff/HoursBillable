@@ -18,10 +18,6 @@ build/
 *.wasm
 *.dSYM/
 
-# Default extensionless binaries if `odin build` is run in root without `-out:`
-/src
-/main
-
 # LLVM & Odin intermediate files
 *.ll
 *.bc
